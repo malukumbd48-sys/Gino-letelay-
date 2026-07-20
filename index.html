@@ -1,0 +1,1466 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Modern</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+:root{
+    --bg:#f5f5f5;
+    --card:#ffffff;
+    --text:#222;
+    --primary:#4f46e5;
+    --secondary:#6366f1;
+}
+
+@media (prefers-color-scheme: dark){
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#ffffff;
+}
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    z-index:999;
+}
+
+@media(prefers-color-scheme:dark){
+nav{
+background:rgba(15,23,42,.7);
+}
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    border-radius:30px;
+    background:white;
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 8%;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin:15px 0;
+    color:var(--primary);
+}
+
+/* FOOTER */
+
+footer{
+    padding:30px;
+    text-align:center;
+    background:var(--card);
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">MyBrand</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Bangun Website Modern</h1>
+
+<p>
+Landing page responsif dengan desain modern, navigasi sticky,
+dan dukungan dark mode otomatis.
+</p>
+
+<a href="#" class="btn">Mulai Sekarang</a>
+
+</div>
+</section>
+
+<section class="features">
+
+<h2>Fitur Utama</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>⚡ Cepat</h3>
+<p>Performa ringan dan loading sangat cepat.</p>
+</div>
+
+<div class="card">
+<h3>📱 Responsive</h3>
+<p>Tampilan menyesuaikan HP, tablet, maupun komputer.</p>
+</div>
+
+<div class="card">
+<h3>🌙 Dark Mode</h3>
+<p>Otomatis mengikuti tema perangkat pengguna.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Modern</h3>
+<p>Desain minimalis dengan efek glassmorphism.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 MyBrand. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bab 1 - Selamat Datang</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.8;
+}
+
+@media (prefers-color-scheme: dark){
+body{
+    background:#0f172a;
+    color:white;
+}
+}
+
+header{
+    background:#4f46e5;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+@media (prefers-color-scheme: dark){
+.card{
+background:#1e293b;
+}
+}
+
+h2{
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#4f46e5;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:30px;
+}
+
+.button:hover{
+    opacity:.9;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Bab 1</h1>
+<h2>Selamat Datang di Dunia Web Development</h2>
+<p>Mulailah perjalananmu menjadi seorang Web Developer.</p>
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>Apa yang Akan Kamu Pelajari?</h2>
+
+<p>
+Website ini dibuat untuk membantu pemula belajar membuat website dari nol.
+Kamu tidak perlu memiliki pengalaman sebelumnya. Semua materi akan dijelaskan langkah demi langkah dengan bahasa yang mudah dipahami.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Materi yang Akan Dipelajari</h2>
+
+<ul>
+<li>✔ Apa itu Website</li>
+<li>✔ Cara Kerja Internet</li>
+<li>✔ HTML Dasar</li>
+<li>✔ CSS Dasar</li>
+<li>✔ JavaScript Dasar</li>
+<li>✔ Responsive Design</li>
+<li>✔ Dark Mode</li>
+<li>✔ Membuat Landing Page Modern</li>
+<li>✔ Publish Website ke GitHub Pages</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Tujuan Kursus</h2>
+
+<p>
+Setelah menyelesaikan semua bab, kamu diharapkan mampu membuat website modern sendiri menggunakan HTML, CSS, dan JavaScript, serta mempublikasikannya agar bisa diakses oleh siapa saja melalui internet.
+</p>
+
+</div>
+
+<a href="bab2.html" class="button">Lanjut ke Bab 2 →</a>
+
+</main>
+
+<footer>
+© 2026 Membangun Landing Page dari Nol
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bab 2 - Apa Itu Website?</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.8;
+}
+
+@media (prefers-color-scheme: dark){
+body{
+    background:#0f172a;
+    color:white;
+}
+}
+
+header{
+    background:#4f46e5;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+main{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+@media (prefers-color-scheme: dark){
+.card{
+    background:#1e293b;
+}
+}
+
+h2{
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+.code{
+    background:#111827;
+    color:#22c55e;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:10px;
+    font-family:monospace;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#4f46e5;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:30px;
+}
+
+.button:hover{
+    opacity:.9;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Bab 2</h1>
+<h2>Apa Itu Website?</h2>
+<p>Memahami dasar sebelum mulai membuat website.</p>
+</header>
+
+<main>
+
+<div class="card">
+
+<h2>Pengertian Website</h2>
+
+<p>
+Website adalah kumpulan halaman yang dapat dibuka menggunakan browser seperti Google Chrome, Firefox, Microsoft Edge, atau Safari. Halaman-halaman tersebut berisi informasi, gambar, video, tombol, formulir, dan berbagai fitur lainnya.
+</p>
+
+<p>
+Setiap website memiliki alamat unik yang disebut <b>domain</b>, misalnya:
+</p>
+
+<ul>
+<li>www.google.com</li>
+<li>www.wikipedia.org</li>
+<li>www.github.com</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Contoh Website</h2>
+
+<ul>
+<li>🔍 Mesin pencari (contoh: Google)</li>
+<li>📺 Platform video</li>
+<li>🛒 Toko online</li>
+<li>📚 Website belajar</li>
+<li>📰 Portal berita</li>
+<li>🎮 Website game</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Website Dibuat Menggunakan Apa?</h2>
+
+<p>Sebuah website modern biasanya dibuat menggunakan tiga teknologi utama:</p>
+
+<ul>
+<li><b>HTML</b> → Membuat struktur halaman.</li>
+<li><b>CSS</b> → Mengatur tampilan dan warna.</li>
+<li><b>JavaScript</b> → Menambahkan interaksi dan logika.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Ilustrasi Sederhana</h2>
+
+<div class="code">
+HTML = Kerangka Rumah
+
+CSS = Cat & Dekorasi
+
+JavaScript = Listrik, Lampu, dan Pintu Otomatis
+</div>
+
+<p style="margin-top:15px;">
+Bayangkan sebuah rumah. HTML adalah rangka dan dindingnya, CSS membuat rumah terlihat indah, sedangkan JavaScript membuat rumah menjadi interaktif, misalnya lampu yang bisa dinyalakan atau pintu yang terbuka otomatis.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Latihan</h2>
+
+<p>Coba jawab pertanyaan berikut:</p>
+
+<ol style="padding-left:20px;">
+<li>Apa yang dimaksud dengan website?</li>
+<li>Sebutkan tiga teknologi utama pembuat website.</li>
+<li>Apa fungsi HTML?</li>
+<li>Apa fungsi CSS?</li>
+<li>Apa fungsi JavaScript?</li>
+</ol>
+
+</div>
+
+<a href="bab3.html" class="button">Lanjut ke Bab 3 →</a>
+
+</main>
+
+<footer>
+© 2026 Membangun Landing Page dari Nol
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bab 3 - Cara Kerja Internet</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+line-height:1.8;
+}
+
+@media(prefers-color-scheme:dark){
+body{
+background:#0f172a;
+color:white;
+}
+}
+
+header{
+background:#4f46e5;
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+main{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-bottom:25px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+@media(prefers-color-scheme:dark){
+.card{
+background:#1e293b;
+}
+}
+
+h2{
+color:#4f46e5;
+margin-bottom:15px;
+}
+
+.info{
+background:#e0f2fe;
+padding:15px;
+border-left:5px solid #0284c7;
+border-radius:10px;
+margin:20px 0;
+color:#000;
+}
+
+@media(prefers-color-scheme:dark){
+.info{
+background:#1e3a5f;
+color:white;
+}
+}
+
+.code{
+background:#111827;
+color:#22c55e;
+padding:15px;
+border-radius:10px;
+font-family:monospace;
+white-space:pre-wrap;
+margin-top:15px;
+}
+
+.button{
+display:inline-block;
+padding:14px 30px;
+background:#4f46e5;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin-top:20px;
+}
+
+.progress{
+margin-bottom:20px;
+font-weight:bold;
+color:#4f46e5;
+}
+
+footer{
+text-align:center;
+padding:30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Bab 3</h1>
+<h2>Cara Kerja Internet</h2>
+<p>Memahami bagaimana website sampai ke layar perangkatmu.</p>
+</header>
+
+<main>
+
+<div class="progress">
+📘 Bab 3 dari 30 • ⏱ Waktu baca: ±6 menit
+</div>
+
+<div class="card">
+
+<h2>Apa itu Internet?</h2>
+
+<p>
+Internet adalah jaringan komputer terbesar di dunia yang menghubungkan miliaran perangkat agar dapat saling bertukar informasi.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Bagaimana Website Bisa Muncul?</h2>
+
+<p>Ketika kamu mengetik alamat website, prosesnya seperti ini:</p>
+
+<div class="code">
+Kamu
+   ↓
+Browser
+   ↓
+Internet
+   ↓
+Server
+   ↓
+Mengirim File HTML, CSS, JavaScript
+   ↓
+Browser Menampilkan Website
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Penjelasan Setiap Bagian</h2>
+
+<p><b>Browser</b> adalah aplikasi seperti Chrome atau Firefox yang membuka website.</p>
+
+<p><b>Server</b> adalah komputer yang menyimpan file website selama 24 jam.</p>
+
+<p><b>HTML, CSS, dan JavaScript</b> dikirim dari server ke browser agar halaman bisa ditampilkan.</p>
+
+</div>
+
+<div class="card">
+
+<h2>Contoh Kehidupan Sehari-hari</h2>
+
+<div class="info">
+Bayangkan kamu memesan makanan melalui aplikasi.
+</div>
+
+<ul style="padding-left:20px;">
+<li>Kamu = Pengguna</li>
+<li>Aplikasi = Browser</li>
+<li>Restoran = Server</li>
+<li>Makanan = File Website</li>
+</ul>
+
+<p>
+Saat pesanan selesai dibuat, restoran mengirim makanan kepadamu. Begitu juga server mengirim file website ke browser.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Istilah Penting</h2>
+
+<ul style="padding-left:20px;">
+<li>🌐 Internet → Jaringan global.</li>
+<li>💻 Browser → Pembuka website.</li>
+<li>🖥 Server → Penyimpan website.</li>
+<li>📄 HTML → Struktur website.</li>
+<li>🎨 CSS → Tampilan website.</li>
+<li>⚙ JavaScript → Interaksi website.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Latihan</h2>
+
+<ol style="padding-left:20px;">
+<li>Apa fungsi browser?</li>
+<li>Apa fungsi server?</li>
+<li>Apa yang dikirim server ke browser?</li>
+<li>Sebutkan tiga contoh browser.</li>
+</ol>
+
+</div>
+
+<a href="bab4.html" class="button">Lanjut ke Bab 4 →</a>
+
+</main>
+
+<footer>
+© 2026 Membangun Landing Page dari Nol
+</footer>
+
+</body>
+</html>
+ 
+<div class="card">
+
+<h2>🚀 Selamat Datang di Perjalanan Belajarmu!</h2>
+
+<div style="background:linear-gradient(135deg,#4f46e5,#6366f1);
+color:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+margin-top:15px;">
+
+<h2>🔥 Oke, kita lanjut ke pembelajaran! 💪👇</h2>
+
+<p style="margin-top:15px;">
+Selamat! Kamu telah menyelesaikan langkah awal. Mulai dari sini, kita akan belajar sedikit demi sedikit hingga mampu membuat website modern dari nol.
+</p>
+
+<p>
+Jangan takut jika masih bingung. Semua programmer hebat juga pernah menjadi pemula. Yang terpenting adalah terus mencoba, berlatih, dan tidak mudah menyerah.
+</p>
+
+</div>
+
+<div style="margin-top:25px;padding:20px;background:#fff8dc;border-left:6px solid orange;border-radius:10px;color:#222;">
+
+<h3>💡 Motivasi Hari Ini</h3>
+
+<p id="motivasi">
+"Kesalahan adalah bagian dari proses belajar. Setiap error yang kamu perbaiki membuatmu menjadi programmer yang lebih baik."
+</p>
+
+</div>
+
+<div style="margin-top:20px;padding:20px;background:#e8f5e9;border-left:6px solid #16a34a;border-radius:10px;color:#222;">
+
+<h3>🎯 Misi Pembelajaran</h3>
+
+<ul style="padding-left:20px;">
+<li>  ✅ Baca materi dengan teliti.</li>
+<li>  ✅ Ketik ulang contoh kode sendiri.</li>
+<li>  ✅ Jangan hanya menyalin, pahami setiap barisnya.</li>
+<li>  ✅ Selesaikan latihan di akhir bab.</li>
+<li>  ✅ Lanjut ke bab berikutnya jika sudah paham.</li>
+</ul>
+
+</div>
+
+<div style="margin-top:20px;padding:20px;background:#e0f2fe;border-left:6px solid #0284c7;border-radius:10px;color:#222;">
+
+<h3>🏆 Target Kamu</h3>
+
+<p>
+Target kita bukan sekadar selesai membaca materi, tetapi benar-benar mampu membuat website sendiri dan mempublikasikannya ke internet.
+</p>
+
+</div>
+
+</div>
+
+<script>
+const motivasi=[
+"Kesalahan adalah bagian dari proses belajar.",
+"Jangan menyerah hanya karena satu error.",
+"Hari ini belajar satu hal, besok kamu akan menguasainya.",
+"Ketekunan lebih penting daripada bakat.",
+"Setiap website hebat berawal dari file index.html."
+];
+
+document.getElementById("motivasi").innerText =
+motivasi[Math.floor(Math.random()*motivasi.length)];
+</script>
+<div class="card">
+
+<div style="text-align:center;padding:25px;background:linear-gradient(135deg,#4f46e5,#6366f1);color:white;border-radius:15px;">
+
+<h1>🔥 Oke, kita lanjut ke pembelajaran! 💪👇</h1>
+
+<p style="margin-top:15px;">
+Selamat datang di Bab 4.
+Mulai dari sini kamu akan mulai menulis kode HTML pertamamu.
+Jangan takut melakukan kesalahan, karena setiap programmer hebat pernah mengalami error saat belajar.
+</p>
+
+<p>
+🚀 Misi hari ini adalah memahami HTML dan membuat halaman web pertamamu.
+</p>
+
+</div>
+
+</div>
+<div class="card">
+
+<h2>📖 Apa itu HTML?</h2>
+
+<p>
+HTML adalah singkatan dari
+<b>HyperText Markup Language</b>.
+HTML merupakan bahasa markup yang digunakan untuk membuat struktur sebuah halaman website.
+</p>
+
+<p>
+HTML bukan bahasa pemrograman.
+HTML hanya bertugas mengatur isi halaman seperti judul, paragraf, gambar, tombol, tabel, formulir, dan masih banyak lagi.
+</p>
+
+</div>
+<div class="card">
+
+<h2>📜 Sejarah HTML</h2>
+
+<p>
+
+HTML pertama kali diperkenalkan pada tahun 1991 oleh seorang ilmuwan komputer bernama <b>Tim Berners-Lee</b>.
+
+Tujuannya adalah agar para peneliti dapat saling berbagi dokumen melalui internet dengan mudah.
+
+</p>
+
+<p>
+
+Seiring berkembangnya internet, HTML terus mengalami pembaruan hingga saat ini menggunakan standar <b>HTML5</b>.
+
+</p>
+
+</div>
+<div class="card">
+
+<h2>🏠 Analogi HTML</h2>
+
+<p>
+
+Bayangkan kamu ingin membangun sebuah rumah.
+
+</p>
+
+<ul>
+
+<li>🧱 HTML = Kerangka rumah</li>
+
+<li>🎨 CSS = Cat dan dekorasi rumah</li>
+
+<li>⚡ JavaScript = Lampu, pintu otomatis, dan fitur elektronik</li>
+
+</ul>
+
+<p>
+
+Tanpa HTML, rumah tidak memiliki bentuk.
+
+Tanpa CSS, rumah terlihat polos.
+
+Tanpa JavaScript, rumah tidak memiliki fitur interaktif.
+
+</p>
+
+</div>
+<div class="card">
+
+<h2>💻 Website Pertama</h2>
+
+<pre style="background:#111827;color:#22c55e;padding:20px;border-radius:10px;overflow:auto;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Website Pertama&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+
+&lt;p&gt;Ini adalah website pertamaku.&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+</div>
+<div class="card">
+
+<h2>🎯 Misi Hari Ini</h2>
+
+✅ Memahami HTML
+
+✅ Mengetahui sejarah HTML
+
+✅ Membuat website pertama
+
+✅ Menjalankan kode di browser
+
+</div>
+ <div class="card">
+
+<h2>💡 Tips Programmer</h2>
+
+<p>
+
+Jangan langsung menghafal semua tag HTML.
+
+Lebih baik sering mencoba menulis kode sendiri.
+
+Semakin sering latihan,
+
+semakin cepat kamu memahami HTML.
+
+</p>
+
+</div>
+<div class="card">
+
+<h2>⚠ Kesalahan yang Sering Dilakukan</h2>
+
+<ul>
+
+<li>Tidak menutup tag.</li>
+
+<li>Salah menulis nama tag.</li>
+
+<li>Lupa menyimpan file menjadi <b>.html</b>.</li>
+
+<li>Tidak mencoba kode sendiri.</li>
+
+</ul>
+
+</div>
+<div class="card" style="text-align:center;">
+
+<h1>🎉 Selamat!</h1>
+
+<p>
+
+Kamu telah menyelesaikan Bab 4.
+
+</p>
+
+<h2 style="color:#16a34a;">
++10 XP
+</h2>
+
+<p>
+
+Siap menuju Bab 5?
+
+</p>
+
+<a href="bab5.html" class="button">
+
+Lanjut ke Bab 5 🚀
+
+</a>
+
+</div>
+<section class="hero-premium">
+
+<div class="hero-card">
+
+<span class="badge">🚀 LAB HTML #1</span>
+
+<h1>Membuat Website Pertamamu</h1>
+
+<p>
+Selamat datang di laboratorium HTML.
+Di bab ini kamu akan mulai menulis kode pertamamu dan melihat hasilnya secara langsung.
+</p>
+
+<div class="info-grid">
+
+<div class="info-box">
+<h3>🎯 Level</h3>
+<p>Pemula</p>
+</div>
+
+<div class="info-box">
+<h3>⏱ Durasi</h3>
+<p>8 Menit</p>
+</div>
+
+<div class="info-box">
+<h3>📚 Materi</h3>
+<p>Heading & Paragraf</p>
+</div>
+
+<div class="info-box">
+<h3>⭐ Rating</h3>
+<p>4.9 / 5</p>
+</div>
+
+</div>
+
+<div class="progress-box">
+
+<p>Progress Belajar</p>
+
+<div class="progress">
+<div class="bar"></div>
+</div>
+
+<span>15% Selesai</span>
+
+</div>
+
+<div class="mission">
+
+<h2>🎯 Misi Hari Ini</h2>
+
+<ul>
+<li>✅ Mengenal Heading</li>
+<li>✅ Membuat Paragraf</li>
+<li>✅ Menulis Kode HTML</li>
+<li>✅ Menyelesaikan Tantangan</li>
+</ul>
+
+</div>
+
+<button class="start-btn">
+🔥 Mulai Belajar
+</button>
+
+</div>
+
+</section>
+<div class="card">
+
+<h2>🎯 Mengenal Heading</h2>
+
+<p>
+Heading adalah judul pada sebuah halaman website. Heading membantu pengunjung memahami isi halaman dan membuat tampilan lebih rapi.
+</p>
+
+<p>
+HTML memiliki 6 tingkat heading, mulai dari <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>.
+</p>
+
+<pre>
+&lt;h1&gt;Judul Utama&lt;/h1&gt;
+&lt;h2&gt;Sub Judul&lt;/h2&gt;
+&lt;h3&gt;Judul Kecil&lt;/h3&gt;
+</pre>
+
+</div>
+<div class="card">
+
+<h2>📝 Membuat Paragraf</h2>
+
+<p>
+Untuk menampilkan teks biasa, HTML menggunakan tag <code>&lt;p&gt;</code>.
+</p>
+
+<pre>
+&lt;p&gt;
+Halo, saya sedang belajar HTML.
+&lt;/p&gt;
+</pre>
+
+<p>
+Paragraf digunakan untuk menjelaskan informasi kepada pembaca.
+</p>
+
+</div>
+<div class="card">
+
+<h2>💻 Menulis Kode HTML</h2>
+
+<p>
+Sekarang gabungkan heading dan paragraf menjadi satu halaman sederhana.
+</p>
+
+<pre>
+&lt;h1&gt;Belajar HTML&lt;/h1&gt;
+
+&lt;p&gt;
+Ini website pertamaku.
+&lt;/p&gt;
+</pre>
+
+</div>
+<div class="card">
+
+<h2>🏆 Tantangan</h2>
+
+<p>
+Coba ubah kode di atas menjadi:
+</p>
+
+<pre>
+&lt;h1&gt;Halo, Namamu!&lt;/h1&gt;
+
+&lt;p&gt;
+Saya sedang belajar HTML.
+&lt;/p&gt;
+</pre>
+
+<p>
+Jika berhasil, berarti kamu sudah membuat halaman web pertamamu. 🎉
+</p>
+
+</div>
+<div class="next-section">
+
+    <h2>🎉 Selamat!</h2>
+
+    <p>
+        Kamu telah menyelesaikan Bab 5 dan berhasil membuat halaman HTML pertamamu.
+    </p>
+
+    <button id="nextBtn" class="next-btn">
+        🚀 Lanjut ke Bab 6
+    </button>
+
+</div>
+<section class="hero-premium">
+
+<div class="hero-card">
+
+<span class="badge">🌐 LAB HTML #2</span>
+
+<h1>Membuat Link & Menampilkan Gambar</h1>
+
+<p>
+Selamat datang di Bab 6! Sekarang website-mu akan menjadi lebih hidup dengan menambahkan link dan gambar. Fitur ini adalah dasar dari hampir semua website modern.
+</p>
+
+<div class="info-grid">
+
+<div class="info-box">
+<h3>🎯 Level</h3>
+<p>Pemula</p>
+</div>
+
+<div class="info-box">
+<h3>⏱ Durasi</h3>
+<p>10 Menit</p>
+</div>
+
+<div class="info-box">
+<h3>📚 Materi</h3>
+<p>Link & Gambar</p>
+</div>
+
+<div class="info-box">
+<h3>⭐ Rating</h3>
+<p>4.9 / 5</p>
+</div>
+
+</div>
+
+<div class="progress-box">
+
+<p>Progress Belajar</p>
+
+<div class="progress">
+<div class="bar" style="width:30%;"></div>
+</div>
+
+<span>30% Selesai</span>
+
+</div>
+
+<div class="mission">
+
+<h2>🎯 Misi Hari Ini</h2>
+
+<ul>
+<li>✅ Membuat Link</li>
+<li>✅ Membuka Website</li>
+<li>✅ Menampilkan Gambar</li>
+<li>✅ Menyelesaikan Tantangan</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+<div class="card">
+
+<h2>🔗 Apa Itu Link?</h2>
+
+<p>
+Link digunakan untuk berpindah ke halaman lain atau membuka website lain.
+</p>
+
+<pre>
+&lt;a href="https://google.com"&gt;
+Buka Google
+&lt;/a&gt;
+</pre>
+
+<p>
+Tag <code>&lt;a&gt;</code> disebut Anchor.
+</p>
+
+</div>
+<div class="card">
+
+<h2>🖼 Menampilkan Gambar</h2>
+
+<p>
+Gunakan tag <code>&lt;img&gt;</code>.
+</p>
+
+<pre>
+&lt;img src="gambar.jpg" width="250"&gt;
+</pre>
+
+<p>
+Pastikan gambar berada di folder yang sama dengan file HTML atau gunakan alamat URL gambar.
+</p>
+
+</div>
+<div class="card">
+
+<h2>🏆 Tantangan</h2>
+
+<p>Buatlah halaman yang memiliki:</p>
+
+<ul>
+
+<li>1 Judul</li>
+
+<li>1 Gambar</li>
+
+<li>1 Link menuju Google</li>
+
+</ul>
+
+</div>
+<div class="next-section">
+
+<h2>🎉 Selamat!</h2>
+
+<p>
+Sekarang kamu sudah bisa membuat link dan menampilkan gambar di website.
+</p>
+
+<button id="nextBtn" class="next-btn">
+
+🚀 Lanjut ke Bab 7
+
+</button>
+
+</div>
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>Kota</th>
+    </tr>
+
+    <tr>
+        <td>Gino</td>
+        <td>17</td>
+        <td>Ambon</td>
+    </tr>
+</table>
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Tabel Data Siswa</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#e3f2fd;
+}
+
+h1{
+    text-align:center;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#2196f3;
+    color:white;
+}
+
+th, td{
+    border:1px solid black;
+    padding:12px;
+    text-align:center;
+}
+
+tr:hover{
+    background:#ddd;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Data Siswa</h1>
+
+<table>
+
+<tr>
+<th>No</th>
+<th>Nama</th>
+<th>Kelas</th>
+<th>Jurusan</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Gino</td>
+<td>XII</td>
+<td>Informatika</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Rehan</td>
+<td>Mahasiswa</td>
+<td>Multimedia</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+<form>
+
+<label>Nama:</label>
+<input type="text">
+
+<label>Password:</label>
+<input type="password">
+
+<button>Kirim</button>
+
+</form>
+ 
